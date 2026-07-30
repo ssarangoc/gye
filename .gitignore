@@ -1,0 +1,42 @@
+#----------------------------------------
+# Angular (.gitignore)
+#----------------------------------------
+/dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+node_modules/
+.angular/
+.pnp
+.pnp.js
+*.tsbuildinfo
+
+#----------------------------------------
+# .NET Core / ASP.NET Core (.gitignore)
+#----------------------------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+project.lock.json
+project.fragment.lock.json
+artifacts/
+.dotnet/
+
+#----------------------------------------
+# General / OS
+#----------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+.env
+.vscode/settings.json

@@ -1,0 +1,1370 @@
+2026-07-29 20:41:52.017 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:41:52.065 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:41:52.386 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 20:41:53.088 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:41:53.520 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 20:41:53.589 -05:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 20:41:53.773 -05:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 20:41:53.793 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:41:53.800 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 20:41:53.820 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 20:41:53.832 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 20:41:53.843 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 20:41:53.864 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 20:41:53.985 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 20:41:53.991 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 20:41:53.993 -05:00 [INF] Hosting environment: Development
+2026-07-29 20:41:53.995 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\src\Api
+2026-07-29 20:43:19.810 -05:00 [INF] Application is shutting down...
+2026-07-29 20:43:53.487 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:43:53.533 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:43:53.611 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 20:43:54.315 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:43:54.775 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 20:43:54.797 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 20:43:54.929 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 20:43:54.943 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:43:54.949 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 20:43:54.961 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 20:43:54.972 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 20:43:54.979 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 20:43:54.999 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 20:43:55.065 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 20:43:55.069 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 20:43:55.071 -05:00 [INF] Hosting environment: Development
+2026-07-29 20:43:55.074 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\src\Api
+2026-07-29 20:44:49.609 -05:00 [INF] Application is shutting down...
+2026-07-29 20:45:54.793 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:45:54.831 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:45:54.895 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 20:45:55.533 -05:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:45:55.991 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 20:45:56.016 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 20:45:56.170 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 20:45:56.186 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:45:56.194 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 20:45:56.206 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 20:45:56.221 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 20:45:56.228 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 20:45:56.254 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 20:45:56.334 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 20:45:56.341 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 20:45:56.344 -05:00 [INF] Hosting environment: Development
+2026-07-29 20:45:56.348 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\src\Api
+2026-07-29 20:46:03.928 -05:00 [INF] Application is shutting down...
+2026-07-29 20:47:46.718 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:47:46.769 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 20:47:46.861 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 20:47:47.351 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:47:47.526 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 20:47:47.548 -05:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 20:47:47.665 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 20:47:47.679 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 20:47:47.683 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 20:47:47.694 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 20:47:47.704 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 20:47:47.709 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 20:47:47.728 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 20:47:47.786 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 20:47:47.794 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 20:47:47.796 -05:00 [INF] Hosting environment: Development
+2026-07-29 20:47:47.798 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\src\Api
+2026-07-29 20:48:37.360 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 20:48:37.746 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 200 null text/html;charset=utf-8 391.4876ms
+2026-07-29 20:48:37.798 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 20:48:37.798 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 20:48:37.798 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 20:48:37.854 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 55.5259ms
+2026-07-29 20:48:37.854 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 55.6514ms
+2026-07-29 20:48:37.889 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 90.7559ms
+2026-07-29 20:48:37.912 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 20:48:37.930 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 20:48:37.948 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 36.0664ms
+2026-07-29 20:48:37.970 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 40.3091ms
+2026-07-29 20:48:38.220 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 20:48:38.222 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 20:48:38.263 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 41.0454ms
+2026-07-29 20:48:38.671 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 450.4404ms
+2026-07-29 20:49:04.950 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 20:49:04.969 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 18.7299ms
+2026-07-29 20:49:05.010 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 20:49:05.014 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 20:49:05.015 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 20:49:05.017 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 20:49:05.018 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 20:49:05.024 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 13.8698ms
+2026-07-29 20:49:05.035 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 21.0556ms
+2026-07-29 20:49:05.045 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 29.4449ms
+2026-07-29 20:49:05.054 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 37.0183ms
+2026-07-29 20:49:05.069 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 50.5705ms
+2026-07-29 20:49:05.134 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 20:49:05.140 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 20:49:05.151 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 17.4438ms
+2026-07-29 20:49:05.186 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.4441ms
+2026-07-29 20:49:41.288 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 57
+2026-07-29 20:49:41.330 -05:00 [INF] CORS policy execution failed.
+2026-07-29 20:49:41.339 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 20:49:41.565 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 20:49:41.628 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 20:49:43.314 -05:00 [INF] Executed DbCommand (126ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 20:49:44.261 -05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2026-07-29 20:49:44.281 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 2630.6376ms
+2026-07-29 20:49:44.289 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 20:49:44.307 -05:00 [INF] HTTP POST /api/Auth/login responded 401 in 2975.3502 ms
+2026-07-29 20:49:44.333 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 401 null text/plain; charset=utf-8 3044.5842ms
+2026-07-29 20:49:54.469 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 54
+2026-07-29 20:49:54.487 -05:00 [INF] CORS policy execution failed.
+2026-07-29 20:49:54.495 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 20:49:54.510 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 20:49:54.517 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 20:49:55.279 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 20:49:55.919 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 20:49:55.944 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 1413.4547ms
+2026-07-29 20:49:55.953 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 20:49:55.961 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 1476.0931 ms
+2026-07-29 20:49:55.974 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 200 null application/json; charset=utf-8 1505.0041ms
+2026-07-29 20:50:17.539 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/Auth/me - null null
+2026-07-29 20:50:17.692 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:50:17.704 -05:00 [INF] Route matched with {action = "Me", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Me() on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 20:50:17.740 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-29 20:50:17.767 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Me (Inventory.Api) in 45.9643ms
+2026-07-29 20:50:17.774 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:50:17.783 -05:00 [INF] HTTP GET /api/Auth/me responded 200 in 226.1876 ms
+2026-07-29 20:50:17.794 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/Auth/me - 200 null application/json; charset=utf-8 255.683ms
+2026-07-29 20:50:41.113 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/Products - null null
+2026-07-29 20:50:41.138 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 20:50:41.165 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 20:50:42.048 -05:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 20:50:42.271 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 20:50:42.329 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 1152.9833ms
+2026-07-29 20:50:42.336 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 20:50:42.342 -05:00 [INF] HTTP GET /api/Products responded 200 in 1207.9106 ms
+2026-07-29 20:50:42.355 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/Products - 200 null application/json; charset=utf-8 1242.5561ms
+2026-07-29 20:51:04.406 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/Products - null null
+2026-07-29 20:51:04.423 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 20:51:04.432 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 20:51:04.933 -05:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 20:51:04.951 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 20:51:04.959 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 513.6706ms
+2026-07-29 20:51:04.967 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 20:51:04.975 -05:00 [INF] HTTP GET /api/Products responded 200 in 553.5989 ms
+2026-07-29 20:51:04.986 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/Products - 200 null application/json; charset=utf-8 579.7386ms
+2026-07-29 20:53:04.111 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 20:53:04.129 -05:00 [INF] CORS policy execution failed.
+2026-07-29 20:53:04.136 -05:00 [INF] Request origin http://localhost:55865 does not have permission to access the resource.
+2026-07-29 20:53:04.147 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 18.6087 ms
+2026-07-29 20:53:04.164 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 52.6249ms
+2026-07-29 20:53:13.248 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 20:53:13.264 -05:00 [INF] CORS policy execution failed.
+2026-07-29 20:53:13.269 -05:00 [INF] Request origin http://localhost:55865 does not have permission to access the resource.
+2026-07-29 20:53:13.275 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 11.4772 ms
+2026-07-29 20:53:13.288 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 39.8814ms
+2026-07-29 20:53:58.640 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/Auth/me - null null
+2026-07-29 20:53:58.672 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:53:58.679 -05:00 [INF] Route matched with {action = "Me", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Me() on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 20:53:58.690 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-29 20:53:58.698 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Me (Inventory.Api) in 9.9505ms
+2026-07-29 20:53:58.706 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:53:58.713 -05:00 [INF] HTTP GET /api/Auth/me responded 200 in 43.2654 ms
+2026-07-29 20:53:58.723 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/Auth/me - 200 null application/json; charset=utf-8 82.8289ms
+2026-07-29 20:53:59.736 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/Auth/me - null null
+2026-07-29 20:53:59.751 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:53:59.761 -05:00 [INF] Route matched with {action = "Me", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Me() on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 20:53:59.775 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-29 20:53:59.785 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Me (Inventory.Api) in 10.8202ms
+2026-07-29 20:53:59.796 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:53:59.804 -05:00 [INF] HTTP GET /api/Auth/me responded 200 in 54.6919 ms
+2026-07-29 20:53:59.817 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/Auth/me - 200 null application/json; charset=utf-8 81.5613ms
+2026-07-29 20:54:00.398 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/Auth/me - null null
+2026-07-29 20:54:00.432 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:54:00.440 -05:00 [INF] Route matched with {action = "Me", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Me() on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 20:54:00.452 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-29 20:54:00.466 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Me (Inventory.Api) in 15.0475ms
+2026-07-29 20:54:00.478 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Me (Inventory.Api)'
+2026-07-29 20:54:00.483 -05:00 [INF] HTTP GET /api/Auth/me responded 200 in 52.3330 ms
+2026-07-29 20:54:00.508 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/Auth/me - 200 null application/json; charset=utf-8 110.0153ms
+2026-07-29 20:54:03.721 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/Products - null null
+2026-07-29 20:54:03.734 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 20:54:03.745 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 20:54:04.263 -05:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 20:54:04.283 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 20:54:04.291 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 531.9895ms
+2026-07-29 20:54:04.300 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 20:54:04.306 -05:00 [INF] HTTP GET /api/Products responded 200 in 573.5031 ms
+2026-07-29 20:54:04.321 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/Products - 200 null application/json; charset=utf-8 599.824ms
+2026-07-29 21:00:13.274 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 54
+2026-07-29 21:00:13.298 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:00:13.309 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 21:00:13.319 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:13.330 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 21:00:13.881 -05:00 [INF] Executed DbCommand (47ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 21:00:14.381 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 21:00:14.393 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 1042.4132ms
+2026-07-29 21:00:14.403 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:14.407 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 1109.7191 ms
+2026-07-29 21:00:14.421 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 200 null application/json; charset=utf-8 1147.4055ms
+2026-07-29 21:00:15.940 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 54
+2026-07-29 21:00:15.954 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:00:15.960 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 21:00:15.969 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:15.979 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 21:00:16.476 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 21:00:16.983 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 21:00:16.991 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 999.2247ms
+2026-07-29 21:00:17.000 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:17.006 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 1052.7228 ms
+2026-07-29 21:00:17.018 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 200 null application/json; charset=utf-8 1078.2049ms
+2026-07-29 21:00:22.881 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 54
+2026-07-29 21:00:22.893 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:00:22.897 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 21:00:22.906 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:22.914 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 21:00:23.406 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 21:00:23.936 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 21:00:23.948 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 1023.12ms
+2026-07-29 21:00:23.962 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:23.972 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 1078.5000 ms
+2026-07-29 21:00:23.993 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 200 null application/json; charset=utf-8 1111.6399ms
+2026-07-29 21:00:26.431 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 54
+2026-07-29 21:00:26.459 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:00:26.465 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 21:00:26.473 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:26.481 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 21:00:26.971 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 21:00:27.445 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 21:00:27.453 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 961.0576ms
+2026-07-29 21:00:27.462 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:00:27.468 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 1009.5238 ms
+2026-07-29 21:00:27.482 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 200 null application/json; charset=utf-8 1050.9306ms
+2026-07-29 21:00:52.567 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 21:00:52.581 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:00:52.585 -05:00 [INF] Request origin http://localhost:55865 does not have permission to access the resource.
+2026-07-29 21:00:52.593 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 11.8809 ms
+2026-07-29 21:00:52.604 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 36.4086ms
+2026-07-29 21:01:14.559 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/auth - null null
+2026-07-29 21:01:14.576 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-29 21:01:14.590 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-07-29 21:01:14.596 -05:00 [INF] HTTP GET /api/auth responded 401 in 23.2512 ms
+2026-07-29 21:01:14.607 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/auth - 401 0 null 48.2251ms
+2026-07-29 21:01:23.273 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 21:01:23.288 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 15.5153ms
+2026-07-29 21:01:23.326 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 21:01:23.326 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 21:01:23.330 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 21:01:23.330 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 21:01:23.331 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 21:01:23.343 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 17.5607ms
+2026-07-29 21:01:23.354 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 27.5666ms
+2026-07-29 21:01:23.363 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 33.138ms
+2026-07-29 21:01:23.374 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 43.9721ms
+2026-07-29 21:01:23.381 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 50.1341ms
+2026-07-29 21:01:23.636 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 21:01:23.647 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 21:01:23.671 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 23.6231ms
+2026-07-29 21:01:23.690 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.3399ms
+2026-07-29 21:01:25.284 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 21:01:25.298 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 13.3008ms
+2026-07-29 21:01:25.339 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 21:01:25.341 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 21:01:25.341 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 21:01:25.342 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 21:01:25.342 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 21:01:25.358 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 19.1073ms
+2026-07-29 21:01:25.368 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 26.5074ms
+2026-07-29 21:01:25.378 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 36.5764ms
+2026-07-29 21:01:25.387 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 44.2124ms
+2026-07-29 21:01:25.397 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 54.6425ms
+2026-07-29 21:01:25.527 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 21:01:25.531 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 21:01:25.556 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 24.0933ms
+2026-07-29 21:01:25.572 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.5038ms
+2026-07-29 21:01:26.437 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 21:01:26.455 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 17.5544ms
+2026-07-29 21:01:26.493 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 21:01:26.497 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 21:01:26.498 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 21:01:26.498 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 21:01:26.498 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 21:01:26.514 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 20.6503ms
+2026-07-29 21:01:26.530 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 32.9292ms
+2026-07-29 21:01:26.541 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 42.6095ms
+2026-07-29 21:01:26.553 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 54.3612ms
+2026-07-29 21:01:26.564 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 65.6634ms
+2026-07-29 21:01:26.663 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 21:01:26.665 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 21:01:26.691 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 26.3219ms
+2026-07-29 21:01:26.701 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.3883ms
+2026-07-29 21:02:14.377 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 21:02:14.393 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:02:14.402 -05:00 [INF] Request origin http://localhost:55865 does not have permission to access the resource.
+2026-07-29 21:02:14.410 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 16.7450 ms
+2026-07-29 21:02:14.422 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 45.8656ms
+2026-07-29 21:02:30.199 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 21:02:30.216 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:02:30.220 -05:00 [INF] Request origin http://localhost:55865 does not have permission to access the resource.
+2026-07-29 21:02:30.226 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 10.0559 ms
+2026-07-29 21:02:30.235 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 36.0724ms
+2026-07-29 21:02:46.007 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 21:02:46.032 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:02:46.036 -05:00 [INF] Request origin http://localhost:55865 does not have permission to access the resource.
+2026-07-29 21:02:46.042 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 9.7474 ms
+2026-07-29 21:02:46.054 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 47.134ms
+2026-07-29 21:14:14.666 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 21:14:14.708 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 21:14:14.791 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 21:14:15.516 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 21:14:16.027 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 21:14:16.053 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 21:14:16.189 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 21:14:16.205 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 21:14:16.211 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 21:14:16.225 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 21:14:16.237 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 21:14:16.245 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 21:14:16.266 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 21:14:16.330 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 21:14:16.335 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 21:14:16.337 -05:00 [INF] Hosting environment: Development
+2026-07-29 21:14:16.340 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\src\Api
+2026-07-29 21:14:32.502 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 21:14:32.633 -05:00 [INF] CORS policy execution successful.
+2026-07-29 21:14:32.651 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 16.4015 ms
+2026-07-29 21:14:32.673 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 175.8791ms
+2026-07-29 21:14:39.649 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/auth/login - application/json 2
+2026-07-29 21:14:39.677 -05:00 [INF] CORS policy execution successful.
+2026-07-29 21:14:39.762 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:14:39.823 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 21:14:40.006 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-07-29 21:14:40.103 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 249.7972ms
+2026-07-29 21:14:40.113 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:14:40.120 -05:00 [INF] HTTP POST /api/auth/login responded 400 in 443.4868 ms
+2026-07-29 21:14:40.141 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/auth/login - 400 null application/problem+json; charset=utf-8 492.2034ms
+2026-07-29 21:14:40.204 -05:00 [WRN] Connection processing ended abnormally.
+System.InvalidOperationException: Reading is already in progress.
+   at System.IO.Pipelines.ThrowHelper.ThrowInvalidOperationException_AlreadyReading()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.BeginRead(ValueTask`1& awaitable)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2026-07-29 21:17:07.529 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 21:17:07.767 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 237.9223ms
+2026-07-29 21:17:07.822 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 21:17:07.822 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 21:17:07.822 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 21:17:07.822 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 21:17:07.823 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 21:17:07.861 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 38.4708ms
+2026-07-29 21:17:07.871 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 48.2475ms
+2026-07-29 21:17:07.912 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 89.5477ms
+2026-07-29 21:17:07.920 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 97.5761ms
+2026-07-29 21:17:07.933 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 109.9486ms
+2026-07-29 21:17:08.212 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 21:17:08.225 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 21:17:08.249 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 24.5657ms
+2026-07-29 21:17:08.652 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 439.5826ms
+2026-07-29 21:17:15.410 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 50
+2026-07-29 21:17:15.440 -05:00 [INF] CORS policy execution failed.
+2026-07-29 21:17:15.449 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 21:17:15.469 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:17:15.476 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 21:17:17.623 -05:00 [INF] Executed DbCommand (85ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 21:17:17.686 -05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2026-07-29 21:17:17.697 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 2203.5247ms
+2026-07-29 21:17:17.706 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 21:17:17.720 -05:00 [INF] HTTP POST /api/Auth/login responded 401 in 2282.3469 ms
+2026-07-29 21:17:17.785 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 401 null text/plain; charset=utf-8 2375.2204ms
+2026-07-29 22:09:11.659 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 22:09:11.709 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 22:09:11.799 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 22:09:12.468 -05:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 22:09:13.045 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 22:09:13.075 -05:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 22:09:13.252 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 22:09:13.271 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 22:09:13.278 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 22:09:13.295 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 22:09:13.312 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 22:09:13.321 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 22:09:13.355 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 22:09:13.449 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 22:09:13.456 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 22:09:13.460 -05:00 [INF] Hosting environment: Development
+2026-07-29 22:09:13.464 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\Net10\src\Api
+2026-07-29 22:10:20.221 -05:00 [INF] Application is shutting down...
+2026-07-29 22:11:24.378 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 22:11:24.406 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 22:11:24.456 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 22:11:24.814 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 22:11:25.041 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 22:11:25.069 -05:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 22:11:25.161 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 22:11:25.171 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 22:11:25.174 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 22:11:25.182 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 22:11:25.190 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 22:11:25.193 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 22:11:25.208 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 22:11:25.256 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 22:11:25.259 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 22:11:25.261 -05:00 [INF] Hosting environment: Development
+2026-07-29 22:11:25.263 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\Net10\src\Api
+2026-07-29 22:11:42.284 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:11:42.424 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 200 null text/html;charset=utf-8 141.3554ms
+2026-07-29 22:11:42.455 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:11:42.455 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:11:42.455 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:11:42.455 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:11:42.456 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:11:42.480 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 25.2383ms
+2026-07-29 22:11:42.501 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 45.3858ms
+2026-07-29 22:11:42.503 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 48.4667ms
+2026-07-29 22:11:42.505 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 49.7447ms
+2026-07-29 22:11:42.517 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 60.4065ms
+2026-07-29 22:11:42.890 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:11:42.918 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:11:42.924 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 6.3541ms
+2026-07-29 22:11:43.068 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 178.5578ms
+2026-07-29 22:11:46.377 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:11:46.382 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 5.1738ms
+2026-07-29 22:11:46.411 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:11:46.411 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:11:46.416 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:11:46.416 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:11:46.416 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:11:46.421 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 10.4474ms
+2026-07-29 22:11:46.427 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 15.9075ms
+2026-07-29 22:11:46.433 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 16.792ms
+2026-07-29 22:11:46.438 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 21.6593ms
+2026-07-29 22:11:46.442 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 26.0312ms
+2026-07-29 22:11:46.491 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:11:46.494 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:11:46.508 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 13.7058ms
+2026-07-29 22:11:46.511 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.9944ms
+2026-07-29 22:12:03.514 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 53
+2026-07-29 22:12:03.528 -05:00 [INF] CORS policy execution failed.
+2026-07-29 22:12:03.531 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 22:12:03.560 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:12:03.586 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 22:12:04.328 -05:00 [INF] Executed DbCommand (48ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 22:12:04.747 -05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2026-07-29 22:12:04.759 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 1163.6379ms
+2026-07-29 22:12:04.763 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:12:04.770 -05:00 [INF] HTTP POST /api/Auth/login responded 401 in 1240.8899 ms
+2026-07-29 22:12:04.781 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 401 null text/plain; charset=utf-8 1267.7726ms
+2026-07-29 22:12:13.981 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/Auth/login - application/json 54
+2026-07-29 22:12:13.988 -05:00 [INF] CORS policy execution failed.
+2026-07-29 22:12:13.990 -05:00 [INF] Request origin http://localhost:5270 does not have permission to access the resource.
+2026-07-29 22:12:13.998 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:12:14.001 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 22:12:14.339 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 22:12:14.537 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 22:12:14.550 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 545.8469ms
+2026-07-29 22:12:14.552 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:12:14.554 -05:00 [INF] HTTP POST /api/Auth/login responded 200 in 566.0701 ms
+2026-07-29 22:12:14.557 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/Auth/login - 200 null application/json; charset=utf-8 576.2288ms
+2026-07-29 22:13:21.675 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 22:13:21.680 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:21.686 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 6.3781 ms
+2026-07-29 22:13:21.690 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 14.3268ms
+2026-07-29 22:13:21.695 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 22:13:21.701 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:21.763 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:21.774 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 22:13:22.103 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 22:13:22.184 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 22:13:22.208 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 431.1978ms
+2026-07-29 22:13:22.210 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:22.212 -05:00 [INF] HTTP GET /api/products responded 200 in 511.0589 ms
+2026-07-29 22:13:22.216 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 520.3773ms
+2026-07-29 22:13:23.949 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 22:13:23.955 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:23.959 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:23.961 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 22:13:24.170 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 22:13:24.176 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 22:13:24.178 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 214.0868ms
+2026-07-29 22:13:24.180 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:24.183 -05:00 [INF] HTTP GET /api/products responded 200 in 227.4185 ms
+2026-07-29 22:13:24.186 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 237.1345ms
+2026-07-29 22:13:25.627 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 22:13:25.633 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:25.637 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:25.639 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 22:13:25.858 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 22:13:25.866 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 22:13:25.868 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 224.871ms
+2026-07-29 22:13:25.871 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:25.872 -05:00 [INF] HTTP GET /api/products responded 200 in 239.1878 ms
+2026-07-29 22:13:25.876 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 248.3873ms
+2026-07-29 22:13:27.295 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 22:13:27.302 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:27.304 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 2.0782 ms
+2026-07-29 22:13:27.308 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 12.7068ms
+2026-07-29 22:13:27.313 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 22:13:27.319 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:27.321 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:27.323 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 22:13:27.484 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 22:13:27.492 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 22:13:27.497 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 170.5384ms
+2026-07-29 22:13:27.503 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:13:27.506 -05:00 [INF] HTTP GET /api/products responded 200 in 187.5819 ms
+2026-07-29 22:13:27.511 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 197.8632ms
+2026-07-29 22:13:39.776 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 22:13:39.780 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:39.782 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 1.6909 ms
+2026-07-29 22:13:39.786 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 10.0326ms
+2026-07-29 22:13:39.791 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/auth/login - application/json 45
+2026-07-29 22:13:39.794 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:13:39.796 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:13:39.798 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 22:13:39.999 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 22:13:40.181 -05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2026-07-29 22:13:40.184 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 382.1858ms
+2026-07-29 22:13:40.186 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:13:40.188 -05:00 [INF] HTTP POST /api/auth/login responded 401 in 393.9460 ms
+2026-07-29 22:13:40.192 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/auth/login - 401 null text/plain; charset=utf-8 401.1638ms
+2026-07-29 22:13:46.326 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:13:46.330 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 4.0427ms
+2026-07-29 22:13:46.355 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:13:46.359 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 4.5707ms
+2026-07-29 22:13:46.361 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:13:46.363 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:13:46.363 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:13:46.372 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:13:46.375 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 14.5771ms
+2026-07-29 22:13:46.380 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 16.7973ms
+2026-07-29 22:13:46.384 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 20.4499ms
+2026-07-29 22:13:46.388 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 16.152ms
+2026-07-29 22:13:46.441 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:13:46.446 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:13:46.452 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 5.1277ms
+2026-07-29 22:13:46.459 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.5004ms
+2026-07-29 22:13:47.412 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:13:47.416 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 3.9908ms
+2026-07-29 22:13:47.443 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:13:47.444 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:13:47.445 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:13:47.445 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:13:47.445 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:13:47.453 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 9.5806ms
+2026-07-29 22:13:47.457 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 13.23ms
+2026-07-29 22:13:47.462 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 16.4576ms
+2026-07-29 22:13:47.470 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 24.4462ms
+2026-07-29 22:13:47.475 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 29.5477ms
+2026-07-29 22:13:47.536 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:13:47.540 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:13:47.547 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 7.3851ms
+2026-07-29 22:13:47.556 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.981ms
+2026-07-29 22:13:48.161 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:13:48.165 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 3.8646ms
+2026-07-29 22:13:48.198 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:13:48.198 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:13:48.201 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:13:48.201 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:13:48.201 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:13:48.206 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 8.3649ms
+2026-07-29 22:13:48.210 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 11.4756ms
+2026-07-29 22:13:48.215 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 13.8359ms
+2026-07-29 22:13:48.219 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 18.2065ms
+2026-07-29 22:13:48.222 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 21.3415ms
+2026-07-29 22:13:48.265 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:13:48.265 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:13:48.277 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 11.4395ms
+2026-07-29 22:13:48.284 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.7276ms
+2026-07-29 22:14:00.808 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:14:00.812 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 4.2894ms
+2026-07-29 22:14:00.838 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:14:00.842 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 3.8373ms
+2026-07-29 22:14:00.843 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:14:00.845 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:14:00.845 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:14:00.845 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:14:00.856 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 13.2544ms
+2026-07-29 22:14:00.860 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 15.7244ms
+2026-07-29 22:14:00.865 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 19.9868ms
+2026-07-29 22:14:00.869 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 23.8349ms
+2026-07-29 22:14:00.919 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:14:00.920 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:14:00.929 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 9.4801ms
+2026-07-29 22:14:00.935 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.2899ms
+2026-07-29 22:14:01.212 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:14:01.217 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 4.7268ms
+2026-07-29 22:14:01.247 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:14:01.252 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 5.4028ms
+2026-07-29 22:14:01.253 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:14:01.254 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:14:01.255 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:14:01.256 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:14:01.270 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 16.7846ms
+2026-07-29 22:14:01.273 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 19.4995ms
+2026-07-29 22:14:01.277 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 22.4957ms
+2026-07-29 22:14:01.281 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 25.3929ms
+2026-07-29 22:14:01.324 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:14:01.329 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:14:01.336 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 7.0239ms
+2026-07-29 22:14:01.341 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.7637ms
+2026-07-29 22:14:01.445 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:14:01.449 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 3.8935ms
+2026-07-29 22:14:01.475 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:14:01.478 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 3.7542ms
+2026-07-29 22:14:01.479 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:14:01.479 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:14:01.480 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:14:01.480 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:14:01.492 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 12.3843ms
+2026-07-29 22:14:01.496 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 16.4413ms
+2026-07-29 22:14:01.500 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 20.5349ms
+2026-07-29 22:14:01.505 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 24.9403ms
+2026-07-29 22:14:01.545 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:14:01.545 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:14:01.557 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 12.066ms
+2026-07-29 22:14:01.560 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.1492ms
+2026-07-29 22:14:01.638 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:14:01.643 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 4.1276ms
+2026-07-29 22:14:01.668 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:14:01.669 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:14:01.670 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:14:01.670 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:14:01.670 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:14:01.676 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 8.3459ms
+2026-07-29 22:14:01.680 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 11.7039ms
+2026-07-29 22:14:01.686 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 15.7323ms
+2026-07-29 22:14:01.690 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 20.2806ms
+2026-07-29 22:14:01.695 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 24.7893ms
+2026-07-29 22:14:01.742 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:14:01.743 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:14:01.753 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 9.2693ms
+2026-07-29 22:14:01.760 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.8883ms
+2026-07-29 22:14:01.816 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:14:01.822 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 5.3388ms
+2026-07-29 22:14:01.848 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:14:01.848 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:14:01.849 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:14:01.849 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:14:01.849 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:14:01.858 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 9.1736ms
+2026-07-29 22:14:01.861 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 12.4973ms
+2026-07-29 22:14:01.866 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 16.5928ms
+2026-07-29 22:14:01.870 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 21.1957ms
+2026-07-29 22:14:01.875 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 25.6898ms
+2026-07-29 22:14:01.912 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:14:01.912 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:14:01.923 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 10.3746ms
+2026-07-29 22:14:01.931 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.4804ms
+2026-07-29 22:14:01.991 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.html - null null
+2026-07-29 22:14:01.995 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.html - 304 null null 4.7195ms
+2026-07-29 22:14:02.019 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.css - null null
+2026-07-29 22:14:02.019 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - null null
+2026-07-29 22:14:02.023 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - null null
+2026-07-29 22:14:02.024 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.css - 304 null null 5.2165ms
+2026-07-29 22:14:02.025 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-29 22:14:02.027 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/index.js - null null
+2026-07-29 22:14:02.032 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui.css - 304 null null 12.8459ms
+2026-07-29 22:14:02.037 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-bundle.js - 304 null null 14.4694ms
+2026-07-29 22:14:02.046 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/swagger-ui-standalone-preset.js - 304 null null 20.8961ms
+2026-07-29 22:14:02.049 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/index.js - 304 null null 22.9627ms
+2026-07-29 22:14:02.094 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - null null
+2026-07-29 22:14:02.096 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - null null
+2026-07-29 22:14:02.103 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/favicon-32x32.png - 304 null null 6.3415ms
+2026-07-29 22:14:02.111 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.1052ms
+2026-07-29 22:14:11.971 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 22:14:11.976 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:11.977 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 1.5042 ms
+2026-07-29 22:14:11.980 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 8.7068ms
+2026-07-29 22:14:11.985 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/auth/login - application/json 45
+2026-07-29 22:14:11.989 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:11.991 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:14:11.992 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 22:14:12.185 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 22:14:12.358 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 22:14:12.361 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 366.0893ms
+2026-07-29 22:14:12.364 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 22:14:12.366 -05:00 [INF] HTTP POST /api/auth/login responded 200 in 376.4167 ms
+2026-07-29 22:14:12.369 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/auth/login - 200 null application/json; charset=utf-8 384.0052ms
+2026-07-29 22:14:12.391 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 22:14:12.396 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:12.398 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 2.1111 ms
+2026-07-29 22:14:12.405 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 14.1914ms
+2026-07-29 22:14:12.411 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 22:14:12.415 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:12.417 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:14:12.419 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 22:14:12.634 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 22:14:12.640 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 22:14:12.643 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 220.8868ms
+2026-07-29 22:14:12.646 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:14:12.648 -05:00 [INF] HTTP GET /api/products responded 200 in 232.8686 ms
+2026-07-29 22:14:12.652 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 240.8393ms
+2026-07-29 22:14:22.939 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products/4 - null null
+2026-07-29 22:14:22.944 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:22.945 -05:00 [INF] HTTP OPTIONS /api/products/4 responded 204 in 1.5131 ms
+2026-07-29 22:14:22.949 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products/4 - 204 null null 8.9743ms
+2026-07-29 22:14:22.953 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5270/api/products/4 - application/json 208
+2026-07-29 22:14:22.957 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:22.959 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api)'
+2026-07-29 22:14:22.969 -05:00 [INF] Route matched with {action = "UpdateProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(Int32, Inventory.Application.DTOs.ProductRequest) on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 22:14:23.213 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT [p1].[Id], [p1].[Category], [p1].[CreatedAt], [p1].[Description], [p1].[Name], [p1].[Price], [p1].[Stock], [p1].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt]
+    FROM [Products] AS [p]
+    WHERE [p].[Id] = @id
+) AS [p1]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p1].[Id] = [s0].[ProductId]
+ORDER BY [p1].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 22:14:23.653 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[@p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='0']
+SET NOCOUNT ON;
+UPDATE [ProductSuppliers] SET [Price] = @p0
+OUTPUT 1
+WHERE [ProductId] = @p1 AND [SupplierId] = @p2;
+UPDATE [Products] SET [UpdatedAt] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2026-07-29 22:14:23.702 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-07-29 22:14:23.705 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api) in 733.6502ms
+2026-07-29 22:14:23.709 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api)'
+2026-07-29 22:14:23.711 -05:00 [INF] HTTP PUT /api/products/4 responded 204 in 753.8787 ms
+2026-07-29 22:14:23.715 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5270/api/products/4 - 204 null null 761.7208ms
+2026-07-29 22:14:23.723 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 22:14:23.728 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:23.729 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 1.2977 ms
+2026-07-29 22:14:23.733 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 9.485ms
+2026-07-29 22:14:23.738 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 22:14:23.742 -05:00 [INF] CORS policy execution successful.
+2026-07-29 22:14:23.744 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:14:23.746 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 22:14:23.931 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 22:14:23.938 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 22:14:23.941 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 192.6762ms
+2026-07-29 22:14:23.943 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 22:14:23.946 -05:00 [INF] HTTP GET /api/products responded 200 in 203.5455 ms
+2026-07-29 22:14:23.949 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 210.9308ms
+2026-07-29 22:15:18.629 -05:00 [INF] Application is shutting down...
+2026-07-29 23:42:52.283 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 23:42:52.312 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 23:42:52.360 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 23:42:52.656 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 23:42:52.878 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 23:42:52.908 -05:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 23:42:52.998 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 23:42:53.007 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 23:42:53.010 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 23:42:53.019 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 23:42:53.025 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 23:42:53.030 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 23:42:53.042 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 23:42:53.123 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 23:42:53.128 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 23:42:53.129 -05:00 [INF] Hosting environment: Development
+2026-07-29 23:42:53.131 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\Net10\src\api
+2026-07-29 23:43:03.021 -05:00 [INF] Application is shutting down...
+2026-07-29 23:43:23.635 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 23:43:23.664 -05:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'ProductSupplier'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-29 23:43:23.713 -05:00 [INF] No migrations were found in assembly 'Inventory.Infrastructure'. A migration needs to be added before the database can be updated.
+2026-07-29 23:43:24.050 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 23:43:24.247 -05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-29 23:43:24.259 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-29 23:43:24.343 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-29 23:43:24.352 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT 1
+2026-07-29 23:43:24.355 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-29 23:43:24.361 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-29 23:43:24.368 -05:00 [INF] No migrations were applied. The database is already up to date.
+2026-07-29 23:43:24.372 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-29 23:43:24.384 -05:00 [INF] User profile is available. Using 'C:\Users\shirl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-29 23:43:24.427 -05:00 [INF] Now listening on: http://localhost:5270
+2026-07-29 23:43:24.429 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-29 23:43:24.430 -05:00 [INF] Hosting environment: Development
+2026-07-29 23:43:24.431 -05:00 [INF] Content root path: C:\Users\shirl\Documents\Gye\Net10\src\api
+2026-07-29 23:43:56.746 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:43:56.821 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:43:56.830 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 5.6813 ms
+2026-07-29 23:43:56.840 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 94.9023ms
+2026-07-29 23:43:56.850 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:43:56.865 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:43:56.941 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:43:56.955 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:43:57.696 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:43:57.863 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:43:57.934 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 970.6879ms
+2026-07-29 23:43:57.936 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:43:57.941 -05:00 [INF] HTTP GET /api/products responded 200 in 1075.8654 ms
+2026-07-29 23:43:57.948 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 1097.9124ms
+2026-07-29 23:44:11.263 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - null null
+2026-07-29 23:44:11.268 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:11.269 -05:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 1.4942 ms
+2026-07-29 23:44:11.272 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/auth/login - 204 null null 9.0926ms
+2026-07-29 23:44:11.276 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5270/api/auth/login - application/json 45
+2026-07-29 23:44:11.282 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:11.286 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 23:44:11.298 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Inventory.Application.DTOs.LoginRequest) on controller Inventory.Api.Controllers.AuthController (Inventory.Api).
+2026-07-29 23:44:11.680 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[@username='?' (Size = 100)], CommandType='"Text"', CommandTimeout='0']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-29 23:44:12.047 -05:00 [INF] Executing OkObjectResult, writing value of type 'Inventory.Application.DTOs.AuthResponse'.
+2026-07-29 23:44:12.052 -05:00 [INF] Executed action Inventory.Api.Controllers.AuthController.Login (Inventory.Api) in 750.4824ms
+2026-07-29 23:44:12.054 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.AuthController.Login (Inventory.Api)'
+2026-07-29 23:44:12.054 -05:00 [INF] HTTP POST /api/auth/login responded 200 in 772.3773 ms
+2026-07-29 23:44:12.055 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5270/api/auth/login - 200 null application/json; charset=utf-8 778.8348ms
+2026-07-29 23:44:12.076 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:44:12.081 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:12.083 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 2.1374 ms
+2026-07-29 23:44:12.087 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 11.9144ms
+2026-07-29 23:44:12.094 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:44:12.099 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:12.106 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:44:12.108 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:44:12.306 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:44:12.313 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:44:12.317 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 206.1677ms
+2026-07-29 23:44:12.321 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:44:12.323 -05:00 [INF] HTTP GET /api/products responded 200 in 224.1357 ms
+2026-07-29 23:44:12.327 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 232.5368ms
+2026-07-29 23:44:32.238 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products/4 - null null
+2026-07-29 23:44:32.242 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:32.243 -05:00 [INF] HTTP OPTIONS /api/products/4 responded 204 in 1.1870 ms
+2026-07-29 23:44:32.246 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products/4 - 204 null null 7.8558ms
+2026-07-29 23:44:32.250 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5270/api/products/4 - application/json 208
+2026-07-29 23:44:32.254 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:32.256 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api)'
+2026-07-29 23:44:32.263 -05:00 [INF] Route matched with {action = "UpdateProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(Int32, Inventory.Application.DTOs.ProductRequest) on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:44:32.523 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT [p1].[Id], [p1].[Category], [p1].[CreatedAt], [p1].[Description], [p1].[Name], [p1].[Price], [p1].[Stock], [p1].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt]
+    FROM [Products] AS [p]
+    WHERE [p].[Id] = @id
+) AS [p1]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p1].[Id] = [s0].[ProductId]
+ORDER BY [p1].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:44:32.825 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p5='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='0']
+SET NOCOUNT ON;
+UPDATE [ProductSuppliers] SET [Stock] = @p0
+OUTPUT 1
+WHERE [ProductId] = @p1 AND [SupplierId] = @p2;
+UPDATE [Products] SET [Stock] = @p3, [UpdatedAt] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2026-07-29 23:44:32.867 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-07-29 23:44:32.869 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api) in 603.8029ms
+2026-07-29 23:44:32.873 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api)'
+2026-07-29 23:44:32.876 -05:00 [INF] HTTP PUT /api/products/4 responded 204 in 621.4686 ms
+2026-07-29 23:44:32.879 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5270/api/products/4 - 204 null null 629.0435ms
+2026-07-29 23:44:32.885 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:44:32.889 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:32.890 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 1.1980 ms
+2026-07-29 23:44:32.893 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 7.2041ms
+2026-07-29 23:44:32.897 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:44:32.900 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:32.902 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:44:32.904 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:44:33.079 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:44:33.083 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:44:33.086 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 179.8237ms
+2026-07-29 23:44:33.088 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:44:33.089 -05:00 [INF] HTTP GET /api/products responded 200 in 189.1906 ms
+2026-07-29 23:44:33.091 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 194.6193ms
+2026-07-29 23:44:57.438 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products/4 - null null
+2026-07-29 23:44:57.442 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:57.443 -05:00 [INF] HTTP OPTIONS /api/products/4 responded 204 in 1.6537 ms
+2026-07-29 23:44:57.446 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products/4 - 204 null null 7.72ms
+2026-07-29 23:44:57.451 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5270/api/products/4 - application/json 208
+2026-07-29 23:44:57.454 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:57.455 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api)'
+2026-07-29 23:44:57.456 -05:00 [INF] Route matched with {action = "UpdateProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProduct(Int32, Inventory.Application.DTOs.ProductRequest) on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:44:57.623 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT [p1].[Id], [p1].[Category], [p1].[CreatedAt], [p1].[Description], [p1].[Name], [p1].[Price], [p1].[Stock], [p1].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt]
+    FROM [Products] AS [p]
+    WHERE [p].[Id] = @id
+) AS [p1]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p1].[Id] = [s0].[ProductId]
+ORDER BY [p1].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:44:57.826 -05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p5='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='0']
+SET NOCOUNT ON;
+UPDATE [ProductSuppliers] SET [Stock] = @p0
+OUTPUT 1
+WHERE [ProductId] = @p1 AND [SupplierId] = @p2;
+UPDATE [Products] SET [Stock] = @p3, [UpdatedAt] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2026-07-29 23:44:57.839 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-07-29 23:44:57.841 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api) in 382.8916ms
+2026-07-29 23:44:57.843 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.UpdateProduct (Inventory.Api)'
+2026-07-29 23:44:57.844 -05:00 [INF] HTTP PUT /api/products/4 responded 204 in 390.4186 ms
+2026-07-29 23:44:57.847 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5270/api/products/4 - 204 null null 396.0868ms
+2026-07-29 23:44:57.851 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:44:57.854 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:57.856 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 1.6931 ms
+2026-07-29 23:44:57.858 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 7.0951ms
+2026-07-29 23:44:57.862 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:44:57.865 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:44:57.867 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:44:57.868 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:44:58.071 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:44:58.075 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:44:58.078 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 206.8419ms
+2026-07-29 23:44:58.079 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:44:58.080 -05:00 [INF] HTTP GET /api/products responded 200 in 215.5387 ms
+2026-07-29 23:44:58.083 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 221.3258ms
+2026-07-29 23:47:29.367 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:47:29.372 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:47:29.375 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 2.7881 ms
+2026-07-29 23:47:29.378 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 10.8925ms
+2026-07-29 23:47:29.384 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:47:29.389 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:47:29.394 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:47:29.396 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:47:29.670 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:47:29.682 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:47:29.686 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 286.2804ms
+2026-07-29 23:47:29.690 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:47:29.693 -05:00 [INF] HTTP GET /api/products responded 200 in 303.1356 ms
+2026-07-29 23:47:29.696 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 311.8182ms
+2026-07-29 23:47:47.313 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:47:47.317 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:47:47.318 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 1.7583 ms
+2026-07-29 23:47:47.321 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 8.2994ms
+2026-07-29 23:47:47.328 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:47:47.331 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:47:47.332 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:47:47.334 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:47:47.583 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:47:47.589 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:47:47.591 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 254.2826ms
+2026-07-29 23:47:47.595 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:47:47.598 -05:00 [INF] HTTP GET /api/products responded 200 in 266.9180 ms
+2026-07-29 23:47:47.600 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 272.7351ms
+2026-07-29 23:51:18.311 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:51:18.315 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:51:18.318 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 2.6616 ms
+2026-07-29 23:51:18.320 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 8.8798ms
+2026-07-29 23:51:18.326 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:51:18.333 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:51:18.336 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:51:18.338 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:51:18.557 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:51:18.579 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:51:18.585 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 244.8943ms
+2026-07-29 23:51:18.588 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:51:18.591 -05:00 [INF] HTTP GET /api/products responded 200 in 257.6749 ms
+2026-07-29 23:51:18.595 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 269.0238ms
+2026-07-29 23:52:04.376 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:52:04.380 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:52:04.383 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 3.1460 ms
+2026-07-29 23:52:04.387 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 10.8789ms
+2026-07-29 23:52:04.393 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:52:04.397 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:52:04.399 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:52:04.403 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:52:04.606 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:52:04.611 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:52:04.614 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 208.5531ms
+2026-07-29 23:52:04.617 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:52:04.619 -05:00 [INF] HTTP GET /api/products responded 200 in 221.6419 ms
+2026-07-29 23:52:04.621 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 227.9008ms
+2026-07-29 23:52:40.346 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5270/api/products - null null
+2026-07-29 23:52:40.354 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:52:40.358 -05:00 [INF] HTTP OPTIONS /api/products responded 204 in 3.9846 ms
+2026-07-29 23:52:40.363 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5270/api/products - 204 null null 17.3863ms
+2026-07-29 23:52:40.372 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:52:40.377 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:52:40.381 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:52:40.384 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:52:40.564 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:52:40.570 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:52:40.572 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 184.3982ms
+2026-07-29 23:52:40.574 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:52:40.577 -05:00 [INF] HTTP GET /api/products responded 200 in 199.4917 ms
+2026-07-29 23:52:40.580 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 207.9328ms
+2026-07-29 23:52:44.614 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5270/api/products - null null
+2026-07-29 23:52:44.618 -05:00 [INF] CORS policy execution successful.
+2026-07-29 23:52:44.620 -05:00 [INF] Executing endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:52:44.623 -05:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Inventory.Application.DTOs.ProductResponse]]] GetProducts() on controller Inventory.Api.Controllers.ProductsController (Inventory.Api).
+2026-07-29 23:52:44.815 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [p].[UpdatedAt], [s0].[ProductId], [s0].[SupplierId], [s0].[Price], [s0].[Stock], [s0].[Id], [s0].[ContactName], [s0].[Email], [s0].[Name], [s0].[Phone]
+FROM [Products] AS [p]
+LEFT JOIN (
+    SELECT [p0].[ProductId], [p0].[SupplierId], [p0].[Price], [p0].[Stock], [s].[Id], [s].[ContactName], [s].[Email], [s].[Name], [s].[Phone]
+    FROM [ProductSuppliers] AS [p0]
+    INNER JOIN [Suppliers] AS [s] ON [p0].[SupplierId] = [s].[Id]
+) AS [s0] ON [p].[Id] = [s0].[ProductId]
+ORDER BY [p].[CreatedAt] DESC, [p].[Id], [s0].[ProductId], [s0].[SupplierId]
+2026-07-29 23:52:44.822 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Inventory.Application.DTOs.ProductResponse, Inventory.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-29 23:52:44.823 -05:00 [INF] Executed action Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api) in 197.9471ms
+2026-07-29 23:52:44.825 -05:00 [INF] Executed endpoint 'Inventory.Api.Controllers.ProductsController.GetProducts (Inventory.Api)'
+2026-07-29 23:52:44.827 -05:00 [INF] HTTP GET /api/products responded 200 in 208.4858 ms
+2026-07-29 23:52:44.829 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5270/api/products - 200 null application/json; charset=utf-8 215.4503ms

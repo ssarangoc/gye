@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import { Component, OnInit,computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -44,6 +44,8 @@ import { Product, ProductInput, ProductSupplierInput } from './product.model';
         </div>
       </form>
 
+      <p *ngIf="outOfStockProducts().length">Productos con stock bajo: {{ outOfStockProducts().join(', ') }}</p>
+
       <div class="card table-card">
         <div class="table-scroll">
         <table>
@@ -51,7 +53,7 @@ import { Product, ProductInput, ProductSupplierInput } from './product.model';
             <tr><th>Nombre</th><th>Categoría</th><th>Precio</th><th>Stock</th><th>Proveedores</th><th></th></tr>
           </thead>
           <tbody>
-            <tr *ngFor="let product of products()">
+            <tr *ngFor="let product of visibleProducts()">
               <td>{{ product.name }}</td>
               <td>{{ product.category }}</td>
               <td>{{ product.price | currency }}</td>
@@ -108,6 +110,8 @@ export class ProductsComponent implements OnInit {
   readonly products = signal<Product[]>([]);
   readonly error = signal('');
   editingId?: number;
+  readonly visibleProducts= computed(() => this.products().filter(p => p.stock >= 100));
+  readonly outOfStockProducts= computed(() => this.products().filter((p) => p.stock < 100).map((p) => p.name));
 
   readonly form: FormGroup = this.fb.group({
     name: ['', Validators.required],
